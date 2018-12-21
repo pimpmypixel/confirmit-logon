@@ -1,5 +1,5 @@
 {
-    "name": "providr-packages/package-2287",
+    "name": "userneeds/confirmit-logon",
     "description": "Package generated from main.wsdl using wsdltophp/packagegenerator",
     "require": {
         "php": ">=5.3.3",
