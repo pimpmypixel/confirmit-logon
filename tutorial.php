@@ -1,24 +1,35 @@
 <?php
+/**
+ * This file aims to show you how to use this generated package.
+ * In addition, the goal is to show which methods are available and the fist needed parameter(s)
+ * You have to use an associative array such as:
+ * - the key must be a constant beginning with WSDL_ from AbstractSoapClientbase class each generated ServiceType class extends this class
+ * - the value must be the corresponding key value (each option matches a {@link http://www.php.net/manual/en/soapclient.soapclient.php} option)
+ * $options = array(
+ * \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_URL => 'main.wsdl',
+ * \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_TRACE => true,
+ * \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_LOGIN => 'you_secret_login',
+ * \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_PASSWORD => 'you_secret_password',
+ * );
+ * etc....
+ */
 require_once __DIR__ . '/vendor/autoload.php';
-
+/**
+ * Minimal options
+ */
 $options = array(
-    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_URL => 'logon_18_0.wsdl',
-    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_CLASSMAP => ClassMap::get(),
-    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_URL => 'logon_18_0.wsdl',
-    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_TRACE => false,
-    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_LOCATION => 'https://ws.nordic.confirmit.com/confirmit/webservices/current/logon.asmx',
-    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_CLASSMAP => ClassMap::get(),
+    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_URL => 'main.wsdl',
+    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_CLASSMAP => \Confirmit\Logon\ClassMap::get(),
 );
-
-$log = new \ServiceType\Log($options);
-
-$pp = new \StructType\LogOnUser($username, $password);
-
-if ($log->LogOnUser($pp) !== false) {
-    $key = $log->getResult()->LogOnUserResult;
-    echo $key;
-
-
+/**
+ * Samples for Log ServiceType
+ */
+$log = new \Confirmit\Logon\ServiceType\Log($options);
+/**
+ * Sample call for LogOnUser operation/method
+ */
+if ($log->LogOnUser(new \Confirmit\Logon\StructType\LogOnUser()) !== false) {
+    print_r($log->getResult());
 } else {
     print_r($log->getLastError());
 }

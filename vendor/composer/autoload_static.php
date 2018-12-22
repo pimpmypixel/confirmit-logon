@@ -4,35 +4,64 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitb942943a27f0227b296764f8c3b6c40f
+class ComposerStaticInitf8c8b2b91070879c41fd6c918c093a28
 {
     public static $prefixLengthsPsr4 = array (
         'W' => 
         array (
+            'WsdlToPhp\\PackageBase\\Tests\\' => 28,
             'WsdlToPhp\\PackageBase\\' => 22,
         ),
-        'U' => 
+        'C' => 
         array (
-            'Userneeds\\ConfirmitLogon\\' => 25,
+            'Confirmit\\Logon\\' => 16,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'WsdlToPhp\\PackageBase\\Tests\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/wsdltophp/packagebase/tests',
+        ),
         'WsdlToPhp\\PackageBase\\' => 
         array (
             0 => __DIR__ . '/..' . '/wsdltophp/packagebase/src',
         ),
-        'Userneeds\\ConfirmitLogon\\' => 
+        'Confirmit\\Logon\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
     );
 
+    public static $classMap = array (
+        'Confirmit\\Logon\\ClassMap' => __DIR__ . '/../..' . '/src/ClassMap.php',
+        'Confirmit\\Logon\\ServiceType\\Log' => __DIR__ . '/../..' . '/src/ServiceType/Log.php',
+        'Confirmit\\Logon\\StructType\\LogOnUser' => __DIR__ . '/../..' . '/src/StructType/LogOnUser.php',
+        'Confirmit\\Logon\\StructType\\LogOnUserResponse' => __DIR__ . '/../..' . '/src/StructType/LogOnUserResponse.php',
+        'WsdlToPhp\\PackageBase\\AbstractSoapClientBase' => __DIR__ . '/..' . '/wsdltophp/packagebase/src/AbstractSoapClientBase.php',
+        'WsdlToPhp\\PackageBase\\AbstractStructArrayBase' => __DIR__ . '/..' . '/wsdltophp/packagebase/src/AbstractStructArrayBase.php',
+        'WsdlToPhp\\PackageBase\\AbstractStructBase' => __DIR__ . '/..' . '/wsdltophp/packagebase/src/AbstractStructBase.php',
+        'WsdlToPhp\\PackageBase\\SoapClientInterface' => __DIR__ . '/..' . '/wsdltophp/packagebase/src/SoapClientInterface.php',
+        'WsdlToPhp\\PackageBase\\StructArrayInterface' => __DIR__ . '/..' . '/wsdltophp/packagebase/src/StructArrayInterface.php',
+        'WsdlToPhp\\PackageBase\\StructInterface' => __DIR__ . '/..' . '/wsdltophp/packagebase/src/StructInterface.php',
+        'WsdlToPhp\\PackageBase\\Tests\\Client' => __DIR__ . '/..' . '/wsdltophp/packagebase/tests/Client.php',
+        'WsdlToPhp\\PackageBase\\Tests\\SoapClient' => __DIR__ . '/..' . '/wsdltophp/packagebase/tests/SoapClient.php',
+        'WsdlToPhp\\PackageBase\\Tests\\SoapClientTest' => __DIR__ . '/..' . '/wsdltophp/packagebase/tests/SoapClientTest.php',
+        'WsdlToPhp\\PackageBase\\Tests\\StructArrayObject' => __DIR__ . '/..' . '/wsdltophp/packagebase/tests/StructArrayObject.php',
+        'WsdlToPhp\\PackageBase\\Tests\\StructArrayTest' => __DIR__ . '/..' . '/wsdltophp/packagebase/tests/StructArrayTest.php',
+        'WsdlToPhp\\PackageBase\\Tests\\StructBase' => __DIR__ . '/..' . '/wsdltophp/packagebase/tests/StructBaseTest.php',
+        'WsdlToPhp\\PackageBase\\Tests\\StructObject' => __DIR__ . '/..' . '/wsdltophp/packagebase/tests/StructObject.php',
+        'WsdlToPhp\\PackageBase\\Tests\\TestCase' => __DIR__ . '/..' . '/wsdltophp/packagebase/tests/TestCase.php',
+        'WsdlToPhp\\PackageBase\\Tests\\UtilsTest' => __DIR__ . '/..' . '/wsdltophp/packagebase/tests/UtilsTest.php',
+        'WsdlToPhp\\PackageBase\\Utils' => __DIR__ . '/..' . '/wsdltophp/packagebase/src/Utils.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitb942943a27f0227b296764f8c3b6c40f::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitb942943a27f0227b296764f8c3b6c40f::$prefixDirsPsr4;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitf8c8b2b91070879c41fd6c918c093a28::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitf8c8b2b91070879c41fd6c918c093a28::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitf8c8b2b91070879c41fd6c918c093a28::$classMap;
 
         }, null, ClassLoader::class);
     }

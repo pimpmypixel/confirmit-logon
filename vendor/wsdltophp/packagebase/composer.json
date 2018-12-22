@@ -20,16 +20,6 @@
             "name": "Arthur Moore",
             "email": "github@cd-net.net",
             "role": "Contributor"
-        },
-        {
-            "name": "Necati Yared Ozal",
-            "email": "mail@necatiozal.com",
-            "role": "Contributor"
-        },
-        {
-            "name": "Gemorroj",
-            "email": "wapinet@mail.ru",
-            "role": "Contributor"
         }
     ],
     "support" : {
@@ -48,11 +38,7 @@
     },
     "autoload": {
         "psr-4": {
-            "WsdlToPhp\\PackageBase\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
+            "WsdlToPhp\\PackageBase\\": "src",
             "WsdlToPhp\\PackageBase\\Tests\\": "tests"
         }
     }

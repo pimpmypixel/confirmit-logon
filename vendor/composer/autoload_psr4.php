@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'WsdlToPhp\\PackageBase\\Tests\\' => array($vendorDir . '/wsdltophp/packagebase/tests'),
     'WsdlToPhp\\PackageBase\\' => array($vendorDir . '/wsdltophp/packagebase/src'),
-    'Userneeds\\ConfirmitLogon\\' => array($baseDir . '/src'),
+    'Confirmit\\Logon\\' => array($baseDir . '/src'),
 );

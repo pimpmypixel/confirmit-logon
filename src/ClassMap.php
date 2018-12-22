@@ -1,4 +1,7 @@
 <?php
+
+namespace Confirmit\Logon;
+
 /**
  * Class which returns the class map definition
  * @package
@@ -13,8 +16,8 @@ class ClassMap
     final public static function get()
     {
         return array(
-            'LogOnUser' => '\\StructType\\LogOnUser',
-            'LogOnUserResponse' => '\\StructType\\LogOnUserResponse',
+            'LogOnUser' => '\\Confirmit\\Logon\\StructType\\LogOnUser',
+            'LogOnUserResponse' => '\\Confirmit\\Logon\\StructType\\LogOnUserResponse',
         );
     }
 }

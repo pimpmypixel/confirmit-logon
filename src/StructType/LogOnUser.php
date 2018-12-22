@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Confirmit\Logon\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -50,7 +50,7 @@ class LogOnUser extends AbstractStructBase
     /**
      * Set username value
      * @param string $username
-     * @return \StructType\LogOnUser
+     * @return \Confirmit\Logon\StructType\LogOnUser
      */
     public function setUsername($username = null)
     {
@@ -72,7 +72,7 @@ class LogOnUser extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \StructType\LogOnUser
+     * @return \Confirmit\Logon\StructType\LogOnUser
      */
     public function setPassword($password = null)
     {
@@ -89,7 +89,7 @@ class LogOnUser extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\LogOnUser
+     * @return \Confirmit\Logon\StructType\LogOnUser
      */
     public static function __set_state(array $array)
     {

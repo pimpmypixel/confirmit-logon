@@ -1,6 +1,6 @@
 <?php
 
-namespace ServiceType;
+namespace Confirmit\Logon\ServiceType;
 
 use \WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
@@ -16,10 +16,10 @@ class Log extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\LogOnUser $parameters
-     * @return \StructType\LogOnUserResponse|bool
+     * @param \Confirmit\Logon\StructType\LogOnUser $parameters
+     * @return \Confirmit\Logon\StructType\LogOnUserResponse|bool
      */
-    public function LogOnUser(\StructType\LogOnUser $parameters)
+    public function LogOnUser(\Confirmit\Logon\StructType\LogOnUser $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->LogOnUser($parameters));
@@ -32,7 +32,7 @@ class Log extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\LogOnUserResponse
+     * @return \Confirmit\Logon\StructType\LogOnUserResponse
      */
     public function getResult()
     {

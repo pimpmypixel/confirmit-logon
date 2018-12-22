@@ -142,13 +142,14 @@ interface SoapClientInterface
      * @uses SoapClientInterface::setLastError()
      * @uses SoapClientInterface::initSoapClient()
      * @param array $wsdlOptions
+     * @param bool $resetSoapClient allows to disable the SoapClient redefinition
      */
-    public function __construct(array $wsdlOptions = []);
+    public function __construct(array $wsdlOptions = [], $resetSoapClient = true);
     /**
-     * Method getting current SoapClient
+     * Static method getting current SoapClient
      * @return \SoapClient
      */
-    public function getSoapClient();
+    public static function getSoapClient();
     /**
      * Sets a SoapHeader to send
      * For more information, please read the online documentation on {@link http://www.php.net/manual/en/class.soapheader.php}

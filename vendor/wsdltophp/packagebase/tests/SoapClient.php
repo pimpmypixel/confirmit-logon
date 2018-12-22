@@ -13,7 +13,7 @@ class SoapClient extends AbstractSoapClientBase
     /**
      * @return Client
      */
-    public function getSoapClient()
+    public static function getSoapClient()
     {
         return parent::getSoapClient();
     }
@@ -23,7 +23,7 @@ class SoapClient extends AbstractSoapClientBase
     public function search()
     {
         try {
-            $this->getSoapClient()->search();
+            self::getSoapClient()->search();
         } catch (\SoapFault $soapFault) {
             $this->setResult(null);
             $this->saveLastError(__METHOD__, $soapFault);
