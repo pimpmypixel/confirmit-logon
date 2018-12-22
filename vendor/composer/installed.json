@@ -1,17 +1,17 @@
 [
     {
         "name": "wsdltophp/packagebase",
-        "version": "1.0.13",
-        "version_normalized": "1.0.13.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/WsdlToPhp/PackageBase.git",
-            "reference": "2beeee2181b1848c0c958280ba12bc808035c544"
+            "reference": "110fc754e042c1774a6044022e3f305063a627a8"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/WsdlToPhp/PackageBase/zipball/2beeee2181b1848c0c958280ba12bc808035c544",
-            "reference": "2beeee2181b1848c0c958280ba12bc808035c544",
+            "url": "https://api.github.com/repos/WsdlToPhp/PackageBase/zipball/110fc754e042c1774a6044022e3f305063a627a8",
+            "reference": "110fc754e042c1774a6044022e3f305063a627a8",
             "shasum": ""
         },
         "require": {
@@ -21,13 +21,12 @@
             "friendsofphp/php-cs-fixer": "~2.0",
             "phpunit/phpunit": "^4.8 || ^6.0"
         },
-        "time": "2018-07-23T16:39:13+00:00",
+        "time": "2018-07-23T16:46:06+00:00",
         "type": "library",
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
-                "WsdlToPhp\\PackageBase\\": "src",
-                "WsdlToPhp\\PackageBase\\Tests\\": "tests"
+                "WsdlToPhp\\PackageBase\\": "src"
             }
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -35,6 +34,11 @@
             "MIT"
         ],
         "authors": [
+            {
+                "name": "Gemorroj",
+                "email": "wapinet@mail.ru",
+                "role": "Contributor"
+            },
             {
                 "name": "Mikaël DELSOL",
                 "email": "contact@wsdltophp.com",
@@ -48,6 +52,11 @@
             {
                 "name": "Arthur Moore",
                 "email": "github@cd-net.net",
+                "role": "Contributor"
+            },
+            {
+                "name": "Necati Yared Ozal",
+                "email": "mail@necatiozal.com",
                 "role": "Contributor"
             }
         ],

@@ -9,47 +9,23 @@ class ComposerStaticInitb942943a27f0227b296764f8c3b6c40f
     public static $prefixLengthsPsr4 = array (
         'W' => 
         array (
-            'WsdlToPhp\\PackageBase\\Tests\\' => 28,
             'WsdlToPhp\\PackageBase\\' => 22,
+        ),
+        'U' => 
+        array (
+            'Userneeds\\ConfirmitLogon\\' => 25,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'WsdlToPhp\\PackageBase\\Tests\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/wsdltophp/packagebase/tests',
-        ),
         'WsdlToPhp\\PackageBase\\' => 
         array (
             0 => __DIR__ . '/..' . '/wsdltophp/packagebase/src',
         ),
-    );
-
-    public static $fallbackDirsPsr4 = array (
-        0 => __DIR__ . '/../..' . '/src',
-    );
-
-    public static $classMap = array (
-        'ClassMap' => __DIR__ . '/../..' . '/src/ClassMap.php',
-        'ServiceType\\Log' => __DIR__ . '/../..' . '/src/ServiceType/Log.php',
-        'StructType\\LogOnUser' => __DIR__ . '/../..' . '/src/StructType/LogOnUser.php',
-        'StructType\\LogOnUserResponse' => __DIR__ . '/../..' . '/src/StructType/LogOnUserResponse.php',
-        'WsdlToPhp\\PackageBase\\AbstractSoapClientBase' => __DIR__ . '/..' . '/wsdltophp/packagebase/src/AbstractSoapClientBase.php',
-        'WsdlToPhp\\PackageBase\\AbstractStructArrayBase' => __DIR__ . '/..' . '/wsdltophp/packagebase/src/AbstractStructArrayBase.php',
-        'WsdlToPhp\\PackageBase\\AbstractStructBase' => __DIR__ . '/..' . '/wsdltophp/packagebase/src/AbstractStructBase.php',
-        'WsdlToPhp\\PackageBase\\SoapClientInterface' => __DIR__ . '/..' . '/wsdltophp/packagebase/src/SoapClientInterface.php',
-        'WsdlToPhp\\PackageBase\\StructArrayInterface' => __DIR__ . '/..' . '/wsdltophp/packagebase/src/StructArrayInterface.php',
-        'WsdlToPhp\\PackageBase\\StructInterface' => __DIR__ . '/..' . '/wsdltophp/packagebase/src/StructInterface.php',
-        'WsdlToPhp\\PackageBase\\Tests\\Client' => __DIR__ . '/..' . '/wsdltophp/packagebase/tests/Client.php',
-        'WsdlToPhp\\PackageBase\\Tests\\SoapClient' => __DIR__ . '/..' . '/wsdltophp/packagebase/tests/SoapClient.php',
-        'WsdlToPhp\\PackageBase\\Tests\\SoapClientTest' => __DIR__ . '/..' . '/wsdltophp/packagebase/tests/SoapClientTest.php',
-        'WsdlToPhp\\PackageBase\\Tests\\StructArrayObject' => __DIR__ . '/..' . '/wsdltophp/packagebase/tests/StructArrayObject.php',
-        'WsdlToPhp\\PackageBase\\Tests\\StructArrayTest' => __DIR__ . '/..' . '/wsdltophp/packagebase/tests/StructArrayTest.php',
-        'WsdlToPhp\\PackageBase\\Tests\\StructBase' => __DIR__ . '/..' . '/wsdltophp/packagebase/tests/StructBaseTest.php',
-        'WsdlToPhp\\PackageBase\\Tests\\StructObject' => __DIR__ . '/..' . '/wsdltophp/packagebase/tests/StructObject.php',
-        'WsdlToPhp\\PackageBase\\Tests\\TestCase' => __DIR__ . '/..' . '/wsdltophp/packagebase/tests/TestCase.php',
-        'WsdlToPhp\\PackageBase\\Tests\\UtilsTest' => __DIR__ . '/..' . '/wsdltophp/packagebase/tests/UtilsTest.php',
-        'WsdlToPhp\\PackageBase\\Utils' => __DIR__ . '/..' . '/wsdltophp/packagebase/src/Utils.php',
+        'Userneeds\\ConfirmitLogon\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -57,8 +33,6 @@ class ComposerStaticInitb942943a27f0227b296764f8c3b6c40f
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitb942943a27f0227b296764f8c3b6c40f::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitb942943a27f0227b296764f8c3b6c40f::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInitb942943a27f0227b296764f8c3b6c40f::$fallbackDirsPsr4;
-            $loader->classMap = ComposerStaticInitb942943a27f0227b296764f8c3b6c40f::$classMap;
 
         }, null, ClassLoader::class);
     }
