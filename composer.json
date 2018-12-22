@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "\\Userneeds\\ConfirmitLogon\\": "./src/"
+            "Userneeds\\ConfirmitLogon\\": "./src/"
         }
     },
     "minimum-stability": "dev"
