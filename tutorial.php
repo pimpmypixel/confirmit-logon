@@ -12,10 +12,7 @@ $options = array(
 
 $log = new \ServiceType\Log($options);
 
-$pp = new \StructType\LogOnUser(
-    $options[\WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_LOGIN],
-    $options[\WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_PASSWORD]
-);
+$pp = new \StructType\LogOnUser($username, $password);
 
 if ($log->LogOnUser($pp) !== false) {
     $key = $log->getResult()->LogOnUserResult;
